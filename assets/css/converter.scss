@@ -1,25 +1,28 @@
 @import "./mixin.scss";
+@import "./base.scss";
+@import "./keyframes.scss";
 
 .converter {
-    height: 100dvh;
+    min-height: 100vh;
     @include Dflex(center);
 
     section {
         max-width: 500px;
         display: flex;
         flex-direction: column;
-        gap: $md_p;
+        gap: var(--xl-p);
         flex: 1;
-        padding: $md_p;
+        padding: var(--md-p);
 
         .head_body {
-            padding: $md_p;
+            padding: var(--md-p);
             text-align: center;
         }
 
         .input_body {
             input {
-                margin-top: $sm_p;
+                margin-top: var(--sm-p);
+                border-radius: 12px;
             }
         }
     }
