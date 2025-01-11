@@ -1,6 +1,6 @@
-@import "./mixin.scss";
-@import "./base.scss";
-@import "./keyframes.scss";
+@import "./general/mixin.scss";
+@import "./general/base.scss";
+@import "./general/keyframes.scss";
 
 .converter {
     min-height: 100vh;
@@ -10,7 +10,7 @@
         max-width: 500px;
         display: flex;
         flex-direction: column;
-        gap: var(--xl-p);
+        gap: var(--md-p);
         flex: 1;
         padding: var(--md-p);
 

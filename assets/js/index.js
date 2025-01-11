@@ -1,19 +1,11 @@
 const weightInputs = document.querySelectorAll(".weight-input");
-
 const temperatureInputs = document.querySelectorAll(".temperature-input");
-
 const lengthInputs = document.querySelectorAll(".length-input");
-
 const speedInputs = document.querySelectorAll(".speed-input");
-
 const distanceInputs = document.querySelectorAll(".distance-input");
-
 const timeInputs = document.querySelectorAll(".time-input");
-
 const volumeInputs = document.querySelectorAll(".volume-input");
-
 const areaInputs = document.querySelectorAll(".area-input");
-
 const digitalInputs = document.querySelectorAll(".digital-input");
 
 weightInputs.forEach(input => {
