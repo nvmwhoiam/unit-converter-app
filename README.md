@@ -57,7 +57,7 @@ const digitalInputs = document.querySelectorAll(".digital-input");
 
 ## Contact
 
-If you have any questions or need assistance, please do not hesitate to reach out. I apologize if any part of this setup is not clear; this is my first major project, and I am putting in continuous effort to improve it. Feel free to contact me at info@lynqis.io or open an issue on the [GitHub Repository](https://github.com/nvmwhoiam/unit-converter-app)
+If you have any questions or need assistance, please do not hesitate to reach out. I apologize if any part of this setup is not clear; this is my first major project, and I am putting in continuous effort to improve it. Feel free to contact me at [info@lynqis.io](mailto:info@lynqis.io) or open an issue on the [GitHub Repository](https://github.com/nvmwhoiam/unit-converter-app)
 .
 
 ## Contributing
