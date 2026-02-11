@@ -12,7 +12,7 @@
     <link rel="icon" type="image/x-icon" href="../../assets/img/favicon-32x32.png">
     <meta name="author" content="nvmwhoiam">
     <meta name="keywords"
-        content="unit converter, weight conversion, speed conversion, temperature conversion, length conversion, measurement converter, unit calculator, convert weight, convert speed, convert temperature, convert length, accurate conversions, online converter, conversion tool">
+        content="unit converter, weight conversion, speed conversion, temperature conversion, length conversion, measurement converter, unit calculator, accurate conversions, online converter, conversion tool">
 
     <meta name="robots" content="noindex, nofollow">
     <title>Comprehensive Time Converter & Calculator</title>
@@ -20,62 +20,151 @@
 
 <body>
 
-    <main class="converter">
+    <nav class="nav">
 
-        <section class="time_converter">
-            <header class="head_body">
-                <h1>Time Converter</h1>
-            </header>
+        <div class="nav_container GRBg2FHmd9">
 
-            <div class="input_body">
-                <label for="seconds">Seconds (sec)</label>
-                <input type="number" id="seconds" class="time-input" placeholder="1" data-timeunit="sec">
+            <div class="title_wrapper">
+                <h1>
+                    <a href="/" hreflang="en" aria-label="Home page">
+                        Unit Converter
+                    </a>
+                </h1>
             </div>
 
-            <div class="input_body">
-                <label for="milliseconds">Milliseconds (ms)</label>
-                <input type="number" id="milliseconds" class="time-input" placeholder="1000" data-timeunit="ms">
+            <div class="links_wrapper" id="links_wrapper" data-state="closed">
+
+                <ul class="nav_list">
+
+                    <li class="nav_item">
+                        <a href="length" hreflang="en" aria-label="Length page">
+                            <span>Length</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="speed" hreflang="en" aria-label="Speed page">
+                            <span>Speed</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="temperature" hreflang="en" aria-label="Temperature page">
+                            <span>Temperature</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="weight" hreflang="en" aria-label="Weight page">
+                            <span>Weight</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="area" hreflang="en" aria-label="Area page">
+                            <span>Area</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="time" hreflang="en" aria-label="Time page">
+                            <span>Time</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="volume" hreflang="en" aria-label="Volume page">
+                            <span>Volume</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="distance" hreflang="en" aria-label="Distance page">
+                            <span>Distance</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="digital" hreflang="en" aria-label="Digital page">
+                            <span>Digital</span>
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
 
-            <div class="input_body">
-                <label for="microseconds">Microseconds (µs)</label>
-                <input type="number" id="microseconds" class="time-input" placeholder="1000000" data-timeunit="µs">
+            <div class="button_wrapper">
+                <button type="button" class="btn_icon" data-button="nav" aria-label="Toggle nav menu">
+                    <i class="icon_bars-solid"></i>
+                </button>
             </div>
 
-            <div class="input_body">
-                <label for="nanoseconds">Nanoseconds (ns)</label>
-                <input type="number" id="nanoseconds" class="time-input" placeholder="1000000000" data-timeunit="ns">
+        </div>
+
+    </nav>
+
+    <main class="main_container">
+
+        <section class="section_container" data-current_unit="time">
+
+            <div class="section_wrapper">
+
+                <div class="container_header">
+
+                    <h2 class="title">
+                        Time Converter
+                    </h2>
+
+                    <div class="input_wrapper">
+                        <input type="number" placeholder="Enter value" name="conversion_number" inputmode="numeric">
+                    </div>
+
+                    <div class="from_wrapper">
+
+                        <label class="text" for="unit_from">
+                            From:
+                        </label>
+
+                        <div class="select_wrapper">
+                            <select class="unit_select" id="unit_from"></select>
+                        </div>
+
+                    </div>
+
+                    <div class="swap_wrapper">
+                        <button type="button" class="btn_icon" data-button="swap" aria-label="Swap units">
+                            <i class="icon_right-left-solid"></i>
+                        </button>
+                    </div>
+
+                    <div class="to_wrapper">
+
+                        <label class="text" for="unit_to">
+                            To:
+                        </label>
+
+                        <div class="select_wrapper">
+                            <select class="unit_select" id="unit_to"></select>
+                        </div>
+
+                    </div>
+
+                    <div class="result_wrapper">
+                        <p class="result_text">
+                            Conversion Result
+                        </p>
+
+                        <h3 class="result_amount" id="result">
+                            0.00
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="container_body"> </div>
             </div>
 
-            <div class="input_body">
-                <label for="minutes">Minutes (min)</label>
-                <input type="number" id="minutes" class="time-input" placeholder="0.0166667" data-timeunit="min">
-            </div>
-
-            <div class="input_body">
-                <label for="hours">Hours (hr)</label>
-                <input type="number" id="hours" class="time-input" placeholder="0.000277778" data-timeunit="hr">
-            </div>
-
-            <div class="input_body">
-                <label for="days">Days (day)</label>
-                <input type="number" id="days" class="time-input" placeholder="0.0000115741" data-timeunit="day">
-            </div>
-
-            <div class="input_body">
-                <label for="weeks">Weeks (wk)</label>
-                <input type="number" id="weeks" class="time-input" placeholder="0.0000016534" data-timeunit="wk">
-            </div>
-
-            <div class="input_body">
-                <label for="months">Months (mo)</label>
-                <input type="number" id="months" class="time-input" placeholder="0.00003285" data-timeunit="mo">
-            </div>
-
-            <div class="input_body">
-                <label for="years">Years (yr)</label>
-                <input type="number" id="years" class="time-input" placeholder="0.00000274" data-timeunit="yr">
-            </div>
         </section>
 
     </main>

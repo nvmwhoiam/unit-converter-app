@@ -12,7 +12,7 @@
     <link rel="icon" type="image/x-icon" href="../../assets/img/favicon-32x32.png">
     <meta name="author" content="nvmwhoiam">
     <meta name="keywords"
-        content="unit converter, weight conversion, speed conversion, temperature conversion, length conversion, measurement converter, unit calculator, convert weight, convert speed, convert temperature, convert length, accurate conversions, online converter, conversion tool">
+        content="unit converter, weight conversion, speed conversion, temperature conversion, length conversion, measurement converter, unit calculator, accurate conversions, online converter, conversion tool">
 
     <meta name="robots" content="noindex, nofollow">
     <title>Comprehensive Digital Converter & Calculator</title>
@@ -20,100 +20,151 @@
 
 <body>
 
-    <main class="converter">
+    <nav class="nav">
 
-        <section class="digital_converter">
-            <header class="head_body">
-                <h1>Digital/Computing Converter</h1>
-            </header>
+        <div class="nav_container GRBg2FHmd9">
 
-            <div class="input_body">
-                <label for="bits">Bits (b)</label>
-                <input type="number" id="bits" class="digital-input" placeholder="1" data-digitalunit="bits">
+            <div class="title_wrapper">
+                <h1>
+                    <a href="/" hreflang="en" aria-label="Home page">
+                        Unit Converter
+                    </a>
+                </h1>
             </div>
 
-            <div class="input_body">
-                <label for="bytes">Bytes (B)</label>
-                <input type="number" id="bytes" class="digital-input" placeholder="0.125" data-digitalunit="bytes">
+            <div class="links_wrapper" id="links_wrapper" data-state="closed">
+
+                <ul class="nav_list">
+
+                    <li class="nav_item">
+                        <a href="length" hreflang="en" aria-label="Length page">
+                            <span>Length</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="speed" hreflang="en" aria-label="Speed page">
+                            <span>Speed</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="temperature" hreflang="en" aria-label="Temperature page">
+                            <span>Temperature</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="weight" hreflang="en" aria-label="Weight page">
+                            <span>Weight</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="area" hreflang="en" aria-label="Area page">
+                            <span>Area</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="time" hreflang="en" aria-label="Time page">
+                            <span>Time</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="volume" hreflang="en" aria-label="Volume page">
+                            <span>Volume</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="distance" hreflang="en" aria-label="Distance page">
+                            <span>Distance</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="digital" hreflang="en" aria-label="Digital page">
+                            <span>Digital</span>
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
 
-            <div class="input_body">
-                <label for="kilobytes">Kilobytes (KB)</label>
-                <input type="number" id="kilobytes" class="digital-input" placeholder="0.000125" data-digitalunit="kb">
+            <div class="button_wrapper">
+                <button type="button" class="btn_icon" data-button="nav" aria-label="Toggle nav menu">
+                    <i class="icon_bars-solid"></i>
+                </button>
             </div>
 
-            <div class="input_body">
-                <label for="megabytes">Megabytes (MB)</label>
-                <input type="number" id="megabytes" class="digital-input" placeholder="0.000000125"
-                    data-digitalunit="mb">
+        </div>
+
+    </nav>
+
+    <main class="main_container">
+
+        <section class="section_container" data-current_unit="digital">
+
+            <div class="section_wrapper">
+
+                <div class="container_header">
+
+                    <h2 class="title">
+                        Digital/Computing Converter
+                    </h2>
+
+                    <div class="input_wrapper">
+                        <input type="number" placeholder="Enter value" name="conversion_number" inputmode="numeric">
+                    </div>
+
+                    <div class="from_wrapper">
+
+                        <label class="text" for="unit_from">
+                            From:
+                        </label>
+
+                        <div class="select_wrapper">
+                            <select class="unit_select" id="unit_from"></select>
+                        </div>
+
+                    </div>
+
+                    <div class="swap_wrapper">
+                        <button type="button" class="btn_icon" data-button="swap" aria-label="Swap units">
+                            <i class="icon_right-left-solid"></i>
+                        </button>
+                    </div>
+
+                    <div class="to_wrapper">
+
+                        <label class="text" for="unit_to">
+                            To:
+                        </label>
+
+                        <div class="select_wrapper">
+                            <select class="unit_select" id="unit_to"></select>
+                        </div>
+
+                    </div>
+
+                    <div class="result_wrapper">
+                        <p class="result_text">
+                            Conversion Result
+                        </p>
+
+                        <h3 class="result_amount" id="result">
+                            0.00
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="container_body"> </div>
             </div>
 
-            <div class="input_body">
-                <label for="gigabytes">Gigabytes (GB)</label>
-                <input type="number" id="gigabytes" class="digital-input" placeholder="0.000000000125"
-                    data-digitalunit="gb">
-            </div>
-
-            <!-- Additional Units -->
-            <div class="input_body">
-                <label for="terabytes">Terabytes (TB)</label>
-                <input type="number" id="terabytes" class="digital-input" placeholder="1.0e-13" data-digitalunit="tb">
-            </div>
-
-            <div class="input_body">
-                <label for="petabytes">Petabytes (PB)</label>
-                <input type="number" id="petabytes" class="digital-input" placeholder="1.0e-16" data-digitalunit="pb">
-            </div>
-
-            <div class="input_body">
-                <label for="exabytes">Exabytes (EB)</label>
-                <input type="number" id="exabytes" class="digital-input" placeholder="1.0e-19" data-digitalunit="eb">
-            </div>
-
-            <div class="input_body">
-                <label for="zettabytes">Zettabytes (ZB)</label>
-                <input type="number" id="zettabytes" class="digital-input" placeholder="1.0e-22" data-digitalunit="zb">
-            </div>
-
-            <div class="input_body">
-                <label for="yottabytes">Yottabytes (YB)</label>
-                <input type="number" id="yottabytes" class="digital-input" placeholder="1.0e-25" data-digitalunit="yb">
-            </div>
-
-            <div class="input_body">
-                <label for="kilobits">Kilobits (Kb)</label>
-                <input type="number" id="kilobits" class="digital-input" placeholder="1024" data-digitalunit="kb">
-            </div>
-
-            <div class="input_body">
-                <label for="megabits">Megabits (Mb)</label>
-                <input type="number" id="megabits" class="digital-input" placeholder="1024" data-digitalunit="mb">
-            </div>
-
-            <div class="input_body">
-                <label for="gigabits">Gigabits (Gb)</label>
-                <input type="number" id="gigabits" class="digital-input" placeholder="1024" data-digitalunit="gb">
-            </div>
-
-            <div class="input_body">
-                <label for="terabits">Terabits (Tb)</label>
-                <input type="number" id="terabits" class="digital-input" placeholder="1024" data-digitalunit="tb">
-            </div>
-
-            <div class="input_body">
-                <label for="petabits">Petabits (Pb)</label>
-                <input type="number" id="petabits" class="digital-input" placeholder="1024" data-digitalunit="pb">
-            </div>
-
-            <div class="input_body">
-                <label for="exabits">Exabits (Eb)</label>
-                <input type="number" id="exabits" class="digital-input" placeholder="1024" data-digitalunit="eb">
-            </div>
-
-            <div class="input_body">
-                <label for="yottabits">Yottabits (Yb)</label>
-                <input type="number" id="yottabits" class="digital-input" placeholder="1024" data-digitalunit="yb">
-            </div>
         </section>
 
     </main>

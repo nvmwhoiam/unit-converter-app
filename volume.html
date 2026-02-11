@@ -12,7 +12,7 @@
     <link rel="icon" type="image/x-icon" href="../../assets/img/favicon-32x32.png">
     <meta name="author" content="nvmwhoiam">
     <meta name="keywords"
-        content="unit converter, weight conversion, speed conversion, temperature conversion, length conversion, measurement converter, unit calculator, convert weight, convert speed, convert temperature, convert length, accurate conversions, online converter, conversion tool">
+        content="unit converter, weight conversion, speed conversion, temperature conversion, length conversion, measurement converter, unit calculator, accurate conversions, online converter, conversion tool">
 
     <meta name="robots" content="noindex, nofollow">
     <title>Comprehensive Volume Converter & Calculator</title>
@@ -20,96 +20,149 @@
 
 <body>
 
-    <main class="converter">
+    <nav class="nav">
 
-        <section class="volume_converter">
-            <header class="head_body">
-                <h1>Volume Converter</h1>
-            </header>
+        <div class="nav_container GRBg2FHmd9">
 
-            <div class="input_body">
-                <label for="liters">Liters (lt)</label>
-                <input type="number" id="liters" class="volume-input" placeholder="1" data-volumeunit="lit">
+            <div class="title_wrapper">
+                <h1>
+                    <a href="/" hreflang="en" aria-label="Home page">
+                        Unit Converter
+                    </a>
+                </h1>
             </div>
 
-            <div class="input_body">
-                <label for="milliliters">Milliliters (ml)</label>
-                <input type="number" id="milliliters" class="volume-input" placeholder="1000" data-volumeunit="ml">
+            <div class="links_wrapper" id="links_wrapper" data-state="closed">
+
+                <ul class="nav_list">
+
+                    <li class="nav_item">
+                        <a href="length" hreflang="en" aria-label="Length page">
+                            <span>Length</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="speed" hreflang="en" aria-label="Speed page">
+                            <span>Speed</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="temperature" hreflang="en" aria-label="Temperature page">
+                            <span>Temperature</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="weight" hreflang="en" aria-label="Weight page">
+                            <span>Weight</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="area" hreflang="en" aria-label="Area page">
+                            <span>Area</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="time" hreflang="en" aria-label="Time page">
+                            <span>Time</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="volume" hreflang="en" aria-label="Volume page">
+                            <span>Volume</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="distance" hreflang="en" aria-label="Distance page">
+                            <span>Distance</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="digital" hreflang="en" aria-label="Digital page">
+                            <span>Digital</span>
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
 
-            <div class="input_body">
-                <label for="gallons">Gallons (US)</label>
-                <input type="number" id="gallons" class="volume-input" placeholder="0.264172" data-volumeunit="gal">
+            <div class="button_wrapper">
+                <button type="button" class="btn_icon" data-button="nav" aria-label="Toggle nav menu">
+                    <i class="icon_bars-solid"></i>
+                </button>
             </div>
 
-            <div class="input_body">
-                <label for="cups">Cups (US)</label>
-                <input type="number" id="cups" class="volume-input" placeholder="4.22675" data-volumeunit="cup">
-            </div>
+        </div>
 
-            <div class="input_body">
-                <label for="gallons_uk">Gallons (UK)</label>
-                <input type="number" id="gallons_uk" class="volume-input" placeholder="0.219969"
-                    data-volumeunit="gal_uk">
-            </div>
+    </nav>
 
-            <div class="input_body">
-                <label for="pints">Pints (US)</label>
-                <input type="number" id="pints" class="volume-input" placeholder="8" data-volumeunit="pt">
-            </div>
+    <main class="main_container">
 
-            <div class="input_body">
-                <label for="pints_uk">Pints (UK)</label>
-                <input type="number" id="pints_uk" class="volume-input" placeholder="8.799" data-volumeunit="pt_uk">
-            </div>
+        <section class="section_container" data-current_unit="volume">
 
-            <div class="input_body">
-                <label for="quarts">Quarts (US)</label>
-                <input type="number" id="quarts" class="volume-input" placeholder="1.05669" data-volumeunit="qt">
-            </div>
+            <div class="section_wrapper">
 
-            <div class="input_body">
-                <label for="quarts_uk">Quarts (UK)</label>
-                <input type="number" id="quarts_uk" class="volume-input" placeholder="0.879876" data-volumeunit="qt_uk">
-            </div>
+                <div class="container_header">
 
-            <div class="input_body">
-                <label for="fluid_ounces">Fluid Ounces (US)</label>
-                <input type="number" id="fluid_ounces" class="volume-input" placeholder="33.814"
-                    data-volumeunit="fl_oz">
-            </div>
+                    <h2 class="title">
+                        Volume Converter
+                    </h2>
 
-            <div class="input_body">
-                <label for="fluid_ounces_uk">Fluid Ounces (UK)</label>
-                <input type="number" id="fluid_ounces_uk" class="volume-input" placeholder="35.1951"
-                    data-volumeunit="fl_oz_uk">
-            </div>
+                    <div class="input_wrapper">
+                        <input type="number" placeholder="Enter value" name="conversion_number" inputmode="numeric">
+                    </div>
 
-            <div class="input_body">
-                <label for="cubic_meters">Cubic Meters (m³)</label>
-                <input type="number" id="cubic_meters" class="volume-input" placeholder="0.001" data-volumeunit="m3">
-            </div>
+                    <div class="from_wrapper">
 
-            <div class="input_body">
-                <label for="cubic_centimeters">Cubic Centimeters (cm³)</label>
-                <input type="number" id="cubic_centimeters" class="volume-input" placeholder="1000"
-                    data-volumeunit="cm3">
-            </div>
+                        <label class="text" for="unit_from">
+                            From:
+                        </label>
 
-            <div class="input_body">
-                <label for="cubic_inches">Cubic Inches (in³)</label>
-                <input type="number" id="cubic_inches" class="volume-input" placeholder="61.0237" data-volumeunit="in3">
-            </div>
+                        <div class="select_wrapper">
+                            <select class="unit_select" id="unit_from"></select>
+                        </div>
 
-            <div class="input_body">
-                <label for="cubic_feet">Cubic Feet (ft³)</label>
-                <input type="number" id="cubic_feet" class="volume-input" placeholder="0.0353147" data-volumeunit="ft3">
-            </div>
+                    </div>
 
-            <div class="input_body">
-                <label for="barrels_us_oil">Barrels (US oil)</label>
-                <input type="number" id="barrels_us_oil" class="volume-input" placeholder="0.00629"
-                    data-volumeunit="bbl_us">
+                    <div class="swap_wrapper">
+                        <button type="button" class="btn_icon" data-button="swap" aria-label="Swap units">
+                            <i class="icon_right-left-solid"></i>
+                        </button>
+                    </div>
+
+                    <div class="to_wrapper">
+
+                        <label class="text" for="unit_to">
+                            To:
+                        </label>
+
+                        <div class="select_wrapper">
+                            <select class="unit_select" id="unit_to"></select>
+                        </div>
+
+                    </div>
+
+                    <div class="result_wrapper">
+                        <p class="result_text">
+                            Conversion Result
+                        </p>
+
+                        <h3 class="result_amount" id="result">
+                            0.00
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="container_body"> </div>
             </div>
 
         </section>
