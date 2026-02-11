@@ -12,7 +12,7 @@
     <link rel="icon" type="image/x-icon" href="../../assets/img/favicon-32x32.png">
     <meta name="author" content="nvmwhoiam">
     <meta name="keywords"
-        content="unit converter, weight conversion, speed conversion, temperature conversion, length conversion, measurement converter, unit calculator, convert weight, convert speed, convert temperature, convert length, accurate conversions, online converter, conversion tool">
+        content="unit converter, weight conversion, speed conversion, temperature conversion, length conversion, measurement converter, unit calculator, accurate conversions, online converter, conversion tool">
 
     <meta name="robots" content="noindex, nofollow">
     <title>Comprehensive Temperature Converter & Calculator</title>
@@ -20,30 +20,152 @@
 
 <body>
 
-    <main class="converter">
+    <nav class="nav">
 
-        <section class="temperature_converter">
+        <div class="nav_container GRBg2FHmd9">
 
-            <header class="head_body">
-                <h1>Temperature Converter</h1>
-            </header>
-
-            <div class="input_body">
-                <label for="fahrenheit">Fahrenheit (°F)</label>
-                <input type="number" id="fahrenheit" class="temperature-input" placeholder="1"
-                    data-temperatureunit="fahrenheit">
+            <div class="title_wrapper">
+                <h1>
+                    <a href="/" hreflang="en" aria-label="Home page">
+                        Unit Converter
+                    </a>
+                </h1>
             </div>
 
-            <div class="input_body">
-                <label for="celsius">Celsius (℃)</label>
-                <input type="number" id="celsius" class="temperature-input" placeholder="-17.22222222222222"
-                    data-temperatureunit="celsius">
+            <div class="links_wrapper" id="links_wrapper" data-state="closed">
+
+                <ul class="nav_list">
+
+                    <li class="nav_item">
+                        <a href="length" hreflang="en" aria-label="Length page">
+                            <span>Length</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="speed" hreflang="en" aria-label="Speed page">
+                            <span>Speed</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="temperature" hreflang="en" aria-label="Temperature page">
+                            <span>Temperature</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="weight" hreflang="en" aria-label="Weight page">
+                            <span>Weight</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="area" hreflang="en" aria-label="Area page">
+                            <span>Area</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="time" hreflang="en" aria-label="Time page">
+                            <span>Time</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="volume" hreflang="en" aria-label="Volume page">
+                            <span>Volume</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+<<<<<<< HEAD
+=======
+                        <a href="distance" hreflang="en" aria-label="Distance page">
+                            <span>Distance</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+>>>>>>> 1d140372a3eed0e67cf573b42612c29a8d2ab8d0
+                        <a href="digital" hreflang="en" aria-label="Digital page">
+                            <span>Digital</span>
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
 
-            <div class="input_body">
-                <label for="kelvin">Kelvin (K)</label>
-                <input type="number" id="kelvin" class="temperature-input" placeholder="255.92777777777775"
-                    data-temperatureunit="kelvin">
+            <div class="button_wrapper">
+                <button type="button" class="btn_icon" data-button="nav" aria-label="Toggle nav menu">
+                    <i class="icon_bars-solid"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main class="main_container">
+
+        <section class="section_container" data-current_unit="temperature">
+
+            <div class="section_wrapper">
+
+                <div class="container_header">
+
+                    <h2 class="title">
+                        Temperature Converter
+                    </h2>
+
+                    <div class="input_wrapper">
+                        <input type="number" placeholder="Enter value" name="conversion_number" inputmode="numeric">
+                    </div>
+
+                    <div class="from_wrapper">
+
+                        <label class="text" for="unit_from">
+                            From:
+                        </label>
+
+                        <div class="select_wrapper">
+                            <select class="unit_select" id="unit_from"></select>
+                        </div>
+
+                    </div>
+
+                    <div class="swap_wrapper">
+                        <button type="button" class="btn_icon" data-button="swap" aria-label="Swap units">
+                            <i class="icon_right-left-solid"></i>
+                        </button>
+                    </div>
+
+                    <div class="to_wrapper">
+
+                        <label class="text" for="unit_to">
+                            To:
+                        </label>
+
+                        <div class="select_wrapper">
+                            <select class="unit_select" id="unit_to"></select>
+                        </div>
+
+                    </div>
+
+                    <div class="result_wrapper">
+                        <p class="result_text">
+                            Conversion Result
+                        </p>
+
+                        <h3 class="result_amount" id="result">
+                            0.00
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="container_body"> </div>
             </div>
 
         </section>

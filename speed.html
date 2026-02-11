@@ -12,7 +12,7 @@
     <link rel="icon" type="image/x-icon" href="../../assets/img/favicon-32x32.png">
     <meta name="author" content="nvmwhoiam">
     <meta name="keywords"
-        content="unit converter, weight conversion, speed conversion, temperature conversion, length conversion, measurement converter, unit calculator, convert weight, convert speed, convert temperature, convert length, accurate conversions, online converter, conversion tool">
+        content="unit converter, weight conversion, speed conversion, temperature conversion, length conversion, measurement converter, unit calculator, accurate conversions, online converter, conversion tool">
 
     <meta name="robots" content="noindex, nofollow">
     <title>Comprehensive Speed Converter & Calculator</title>
@@ -20,68 +20,152 @@
 
 <body>
 
-    <main class="converter">
+    <nav class="nav">
 
-        <section class="speed_converter">
+        <div class="nav_container GRBg2FHmd9">
 
-            <header class="head_body">
-                <h1>Speed Converter</h1>
-            </header>
-
-            <div class="input_body">
-                <label for="meters_per_second">Meters per second (m/s)</label>
-                <input type="number" id="meters_per_second" class="speed-input" placeholder="1" data-speedunit="mps">
+            <div class="title_wrapper">
+                <h1>
+                    <a href="/" hreflang="en" aria-label="Home page">
+                        Unit Converter
+                    </a>
+                </h1>
             </div>
 
-            <div class="input_body">
-                <label for="kilometers_per_hour">Kilometers per hour (km/h)</label>
-                <input type="number" id="kilometers_per_hour" class="speed-input" placeholder="3.6"
-                    data-speedunit="kph">
+            <div class="links_wrapper" id="links_wrapper" data-state="closed">
+
+                <ul class="nav_list">
+
+                    <li class="nav_item">
+                        <a href="length" hreflang="en" aria-label="Length page">
+                            <span>Length</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="speed" hreflang="en" aria-label="Speed page">
+                            <span>Speed</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="temperature" hreflang="en" aria-label="Temperature page">
+                            <span>Temperature</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="weight" hreflang="en" aria-label="Weight page">
+                            <span>Weight</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="area" hreflang="en" aria-label="Area page">
+                            <span>Area</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="time" hreflang="en" aria-label="Time page">
+                            <span>Time</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="volume" hreflang="en" aria-label="Volume page">
+                            <span>Volume</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+<<<<<<< HEAD
+=======
+                        <a href="distance" hreflang="en" aria-label="Distance page">
+                            <span>Distance</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+>>>>>>> 1d140372a3eed0e67cf573b42612c29a8d2ab8d0
+                        <a href="digital" hreflang="en" aria-label="Digital page">
+                            <span>Digital</span>
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
 
-            <div class="input_body">
-                <label for="miles_per_hour">Miles per hour (mph)</label>
-                <input type="number" id="miles_per_hour" class="speed-input" placeholder="2.23694" data-speedunit="mph">
+            <div class="button_wrapper">
+                <button type="button" class="btn_icon" data-button="nav" aria-label="Toggle nav menu">
+                    <i class="icon_bars-solid"></i>
+                </button>
             </div>
 
-            <div class="input_body">
-                <label for="feet_per_second">Feet per second (ft/s)</label>
-                <input type="number" id="feet_per_second" class="speed-input" placeholder="3.28084"
-                    data-speedunit="fps">
-            </div>
+        </div>
 
-            <div class="input_body">
-                <label for="knots">Knots (kn)</label>
-                <input type="number" id="knots" class="speed-input" placeholder="1.94384" data-speedunit="kn">
-            </div>
+    </nav>
 
-            <div class="input_body">
-                <label for="mach">Mach (Ma)</label>
-                <input type="number" id="mach" class="speed-input" placeholder="0.00291545" data-speedunit="mach">
-            </div>
+    <main class="main_container">
 
-            <div class="input_body">
-                <label for="light_speed">Speed of Light (c)</label>
-                <input type="number" id="light_speed" class="speed-input" placeholder="0.00000000333564"
-                    data-speedunit="c">
-            </div>
+        <section class="section_container" data-current_unit="speed">
 
-            <div class="input_body">
-                <label for="inches_per_second">Inches per second (in/s)</label>
-                <input type="number" id="inches_per_second" class="speed-input" placeholder="39.3701"
-                    data-speedunit="ips">
-            </div>
+            <div class="section_wrapper">
 
-            <div class="input_body">
-                <label for="centimeters_per_second">Centimeters per second (cm/s)</label>
-                <input type="number" id="centimeters_per_second" class="speed-input" placeholder="100"
-                    data-speedunit="cmps">
-            </div>
+                <div class="container_header">
 
-            <div class="input_body">
-                <label for="millimeters_per_second">Millimeters per second (mm/s)</label>
-                <input type="number" id="millimeters_per_second" class="speed-input" placeholder="1000"
-                    data-speedunit="mmps">
+                    <h2 class="title">
+                        Speed Converter
+                    </h2>
+
+                    <div class="input_wrapper">
+                        <input type="number" placeholder="Enter value" name="conversion_number" inputmode="numeric">
+                    </div>
+
+                    <div class="from_wrapper">
+
+                        <label class="text" for="unit_from">
+                            From:
+                        </label>
+
+                        <div class="select_wrapper">
+                            <select class="unit_select" id="unit_from"></select>
+                        </div>
+
+                    </div>
+
+                    <div class="swap_wrapper">
+                        <button type="button" class="btn_icon" data-button="swap" aria-label="Swap units">
+                            <i class="icon_right-left-solid"></i>
+                        </button>
+                    </div>
+
+                    <div class="to_wrapper">
+
+                        <label class="text" for="unit_to">
+                            To:
+                        </label>
+
+                        <div class="select_wrapper">
+                            <select class="unit_select" id="unit_to"></select>
+                        </div>
+
+                    </div>
+
+                    <div class="result_wrapper">
+                        <p class="result_text">
+                            Conversion Result
+                        </p>
+
+                        <h3 class="result_amount" id="result">
+                            0.00
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="container_body"> </div>
             </div>
 
         </section>
